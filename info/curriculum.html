@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Currículum vitae (CV) de Jose Miguel Lamparelli. Profesional de la medicina y actual estudiante de Ciencias Informáticas">
+<meta name="keywords" content="currículum curriculum vitae Jose jose Miguel miguel Lamparelli lamparelli doctor Doctor">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Jose Lamparelli">
+<meta name="language" content="ES">
+<meta name="author" content="Jose Lamparelli">
+<meta name="creationdate" content="9 de enero de 2023">
+<meta name="distribution" content="global">
+<meta name="rating" content="general">
+<title>CV - J.Lamparelli</title>
+<link rel="shortcut icon" href="./img/favicon.ico">
+<link rel="stylesheet" href="./css/estilo_curriculum.css">
+<link rel="canonical" href="https://academy/info/curriculum.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <h1><span>Dr. Jose Miguel Lamparelli</span> <br>
+    Curriculum Vitae</h1>
+  <div>
+    <ul class="nav">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="">Contacto</a>
+        <ul>
+          <li><a href="mailto:jose.lamparelli@gmail.com">Email</a></li>
+          <li>
+            <button class="open-button" onclick="openForm()">Mensaje</button>
+          </li>
+        </ul>
+      </li>
+      <li><a href="">Descagar</a>
+        <ul>
+          <li><a href="./pdf/cv.pdf" download="CV-Jose Lamparelli.pdf">Versión en Pdf</a></li>
+        </ul>
+      </li>
+
+		
+		<!-- Queda para la proxima. Intencion: mostrar el cv en dos idiomas con JQuery -->
+<!--       <li ><a href="">Idioma</a>
+        <ul>
+          <li>
+            <button id="eng">English</button>
+          </li>
+          <li>
+            <button id="spain">Español</button>
+          </li>
+        </ul>
+      </li> -->
+    </ul>
+  </div>
+
+
+</header>
+<main>
+  <div class="form-popup" id="myForm">
+    <form method="GET" action="#" class="form-container">
+      <h4>Formulario de Contacto</h4>
+      <label for="apellido">Apellido</label>
+      <input type="text" placeholder="Escriba su apellido" name="apellido" required>
+      <label for="nombre">Nombre</label>
+      <input type="text" placeholder="Escriba su nombre" name="nombre" required>
+      <label for="email">Email</label>
+      <input type="email" placeholder="Escriba su mail" name="email" required>
+      <label for="mensaje">Mensaje</label>
+      <textarea name="mensaje" rows="6" cols="40" maxlength="200" placeholder="Max 200 caracteres"></textarea>
+      <button type="submit" id="submit" class="btn">ENVIAR</button>
+      <button type="button" class="btn cancel" id="cancel" onclick="closeForm()">CANCELAR</button>
+    </form>
+  </div>
+  <div class="main_container">
+    <div class="list_container">
+      <div class="item">
+        <p class="btn-item">Ciencias Médicas</p>
+        <div class="item-content">
+          <h2>Título de Grado</h2>
+          <h3>Médico Cirujano</h3>
+          <ul>
+            <li>Facultad de Medicina de la Universidad Nacional del Nordeste. Corrientes. Argentina.<br>
+              Fecha de Egreso: Febrero de 1990.<br>
+              Promedio Final de la Carrera: 9.26.<br>
+              Honores: Diploma de Honor Universitario. Medalla de Oro Universitaria. Medalla de Oro del Colegio Médico de Corrientes.</li>
+          </ul>
+          <h2>Posgrado</h2>
+          <h3>Especialista en Clínica Médica</h3>
+          <ul>
+            <li>Residencia de Clínica Médica.<br>
+              Hospital de Clínicas José de San Martín.
+              Buenos Aires.<br>
+              Junio de 1990 a Mayo de 1993.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="btn-item">Actividad Académica</p>
+        <div class="item-content">
+          <ul  id="act_cientifica">
+            <li class="docencia"><span> Jefe de Trabajos Prácticos.</span> <br>
+              Hospital de Clínicas José de San Martín.
+              Primera Cátedra de Medicina. Abril de 1999 a Mayo de 2003.</li>
+            <li class="docencia"><span>Ayudante de Segunda.</span> Experiencia Curricular Plan B.<br>
+              Hospital de Clínicas José de San Martín.
+              Septiembre de 1995 a Diciembre 1996.</li>
+            <li class="publi"><span>Autor Publicación.</span> “Outstretched Arms Equal Height”.<br>
+              Postgraduate Medicine. Vol 111 Nº3 March 2002.</li>
+            <li class="publi"><span>Autor Publicación.</span> “Síndrome de Malabsorción”.<br>
+              Libro: “Programa  de Actualización en Medicina Interna "PROAMI”. Fascículo 1. 2001. Editorial PANAMERICANA.</li>
+            <li class="publi"><span>Coautor Publicación.</span> “Angeítis de Células Gigantes”.<br>
+              Libro: “Medicina”. 1998. Director: Dr. Branco Mautner.</li>
+            <li class="publi"><span>Coautor Publicación.</span> “ Síndromes Reumáticos Paraneoplásicos”.<br>
+              Libro: “Medicina”. 1998. Director: Dr. Branco Mautner.</li>
+            <li class="publi"><span>Coautor Publicación.</span> “El Paciente Adulto con Plaquetopenia y Neutropenia”.<br>
+              Libro: “Programa  de Actualización en Medicina Interna PROAMI”. 1997. Editorial PANAMERICANA.</li>
+            <li class="publi"><span>CoautorPublicación.</span> “Novedades en las Neumonías de Origen Infeccioso”.<br>
+              Libro: “Avances en Medicina ‘95" SAM. 1995. Editor: M. Cámera.</li>
+            <li class="publi"><span>Coautor Publicación.</span> “El Paciente Adulto con Diarrea Aguda”.<br>
+              Libro: “Temas de Terapéutica Clínica"  1994.  Editorial AKADIA.</li>
+            <li class="invest"><span>Investigador Principal.</span> Estudio de Prevalencia y Práctica Habitual en Población de Riesgo de EPOC en Médicos Generalistas de América Latina.<br>
+              Proyecto PUMA. Junio 2012</li>
+            <li class="congresos"><span>Miembro Titular.</span> XII Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              Agosto de 2008.</li>
+            <li class="congresos"><span>Miembro Titular.</span> XI Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              Agosto de 2006.</li>
+            <li class="congresos"><span>Miembro Titular.</span> X Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              Agosto de 2004.</li>
+            <li class="congresos"><span>Miembro Titular.</span> IX Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              Agosto de 2002.</li>
+            <li class="congresos"><span>Miembro Titular.</span> VIII Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              Agosto de 2000.</li>
+            <li class="congresos"><span>Miembro Titular.</span> VII Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              Junio de 1998.</li>
+            <li class="congresos"><span>Miembro Titular.</span> VI Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              Agosto de 1996.</li>
+            <li class="congresos"><span>Secretario Adjunto.</span> Comité Organizador. VI Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              Agosto de 1996.</li>
+            <li class="congresos"><span>Expositor.</span> Congreso SAMIG 2005. “Compartiendo La Asistencia Clínica Ambulatoria y de Internación”.<br>
+              Octubre de 2005.</li>
+            <li class="congresos"><span>Expositor.</span> Curso de Medicina Interna del Círculo Médico de Azul.<br>
+              Provincia de Buenos Aires. Tema: “Asma en el adulto”. Septiembre de 2004.</li>
+            <li class="congresos"><span>Expositor.</span> Tema “Complicaciones Crónicas de la Diabetes”.<br>
+              Asociación para el Cuidado de la Diabetes en Argentina - CUI.D.AR. Agosto 2001.</li>
+            <li class="congresos"><span>Disertante.</span> Curso de Médico Especialista.<br>
+              Director Dr. César Gnocchi. Hospital de Clínicas José de San Martín. Tema: “Emergencias Oncológicas”. Noviembre de 1999.</li>
+            <li class="congresos"><span>Disertante.</span> Curso de Médico Especialista.<br>
+              Director Dr. César Gnocchi. Hospital de Clínicas José de San Martín. Tema: “Diarrea Crónica”. Agosto de 1998.</li>
+            <li class="congresos"><span>Comentador de Trabajos Científicos.</span> Mesa de Temas Libres “Medicina Interna”.<br>
+              VIII Congreso Internacional de Medicina Interna del Hospital de Clínicas.  Agosto de 2000.</li>
+            <li class="congresos"><span>Comentador de Paneles.</span> VI Congreso Nacional de Medicina.<br>
+              Tema: “Reumatología”. Noviembre de 1997.</li>
+            <li class="congresos"><span>Panelista.</span> I Congreso de Medicina Interna del Mercosur.<br>
+              Tema: “Fiebre en el Paciente con SIDA”.Noviembre de 1996.</li>
+            <li class="congresos"><span> Secretario de Mesa.</span> X Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              Agosto del 2004.</li>
+            <li class="congresos"><span>Secretario de Mesa.</span> IX Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              Agosto del 2002.</li>
+            <li class="congresos"><span>Secretario de Mesa.</span> VIII Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              Agosto del 2000.</li>
+            <li class="congresos"><span>Secretario de Mesa.</span> VII Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              “Temas libres en Cardiología” Junio de 1998.</li>
+            <li class="congresos"><span>Secretario de Mesa.</span> V Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              “Temas libres en Cardiología”. Agosto de 1994.</li>
+            <li class="congresos"><span>Coautor.</span> "Enteropatía Perdedora de Proteínas por Gastropatía Hipertrófica Asociada a Helicobacter pylori”.<br>
+              IX Congreso Internacional de Medicina Interna. 2002.</li>
+            <li class="congresos"><span>Coautor.</span> "Estrongiloidiasis Sistémica en un Paciente Adulto con SIDA”.<br>
+              VI Congreso Internacional de Medicina Interna. Agosto 1996.</li>
+            <li class="congresos"><span>Coautor.</span> "Síndrome de Encefalopatía, Sordera y Oclusiones Arteriolares Retinianas”.<br>
+              V Congreso Internacional de Medicina Interna. Agosto de 1994.</li>
+            <li class="congresos"><span>Coautor.</span> "Patrón infrecuente de la Hidatidosis Pulmonar”.<br>
+              IV Congreso Nacional de Medicina. Noviembre de 1994.</li>
+            <li class="congresos"><span>Coautor.</span> "Síndrome de Encefalopatía, Sordera y Oclusiones Arteriolares Retinianas”.<br>
+              V Congreso Internacional de Medicina Interna. Agosto 1994.</li>
+            <li class="congresos"><span>Coautor.</span> "Migraña Hemipléjica Familiar".<br>
+              Jornadas Interesidentes Nacionales. Octubre de 1992.</li>
+            <li class="congresos"><span>Coautor.</span> "Polineuropatía Crónica Amiloidótica".<br>
+              IV Congreso Internacional de Medicina Interna. Agosto de 1992.</li>
+            <li class="congresos"><span>Coautor.</span> "Síndrome de la Cimitarra".<br>
+              IV Congreso Internacional de Medicina Interna. Agosto de 1992.</li>
+            <li class="capacita"><span>Asistente.</span> Programa formativo AF-4Ds. Avances recientes en el tratamiento de la TEV: el papel de los ACOD.<br>
+              Duke University. Febrero de 2022</li>
+            <li class="capacita"><span>Asistente.</span> Programa formativo AF-4Ds.Prevención de ictus en poblaciones de pacientes especiales.<br>
+              Duke University. Febrero de 2022</li>
+            <li class="capacita"><span>Asistente.</span> Programa formativo AF-4Ds. Prevención de ictus en pacientes con FA: ¿dónde estamos en 2021?.<br>
+              Duke University. Febrero de 2022</li>
+            <li class="capacita"><span>Asistente.</span> Programa formativo AF-4Ds. Epidemiología de la fibrilación auricular.<br>
+              Duke University. Febrero de 2022</li>
+            <li class="capacita"><span>Asistente.</span> Programa formativo AF-4Ds. Avances recientes en el control de la frecuencia frente al ritmo en pacientes con fibrilación auricular.<br>
+              Duke University. Febrero de 2022</li>
+            <li class="capacita"><span>Asistente.</span> Jornadas COVID-19 en Medicina Interna.<br>
+              Hospital de Clínicas José de San Martín. Septiembre 2021.</li>
+            <li class="capacita"><span>Asistente.</span> Curso Hipertensión Secundaria.<br>
+              Sociedad Argentina de Hipertensión Arterial. Mayo de 2021.</li>
+            <li class="capacita"><span>Asistente.</span> XIII Simposio de Hipertensión Arterial del Litoral.<br>
+              Septiembre 2021.</li>
+            <li class="capacita"><span>Asistente.</span> Curso Virtual de Actualización en Hipertensión Arterial.<br>
+              Sociedad Argentina de Hipertensión. Octubre 2020.</li>
+            <li class="capacita"><span>Asistente.</span> Curso de Posgrado de Cardiología Ambulatoria 2020.<br>
+              Instituto Universitario CEMIC. Noviembre 2020.</li>
+            <li class="capacita"><span>Asistente.</span> I Congreso Virtual de Diabetes.<br>
+              Sociedad Argentina de Diabetes. Noviembre 2020.</li>
+            <li class="capacita"><span>Asistente.</span> III Congreso Internacional de Clinica Medica y Medicina Interna.<br>
+              Noviembre de 2015</li>
+            <li class="capacita"><span>Asistente.</span> 9º Pain Latinoamerican Forum.<br>
+              Cancún. México. Junio 2015</li>
+            <li class="capacita"><span>Asistente.</span> III Congreso Internacional de Clínica Médica y Medicina Interna.<br>
+              Noviembre 2015</li>
+            <li class="capacita"><span>Asistente.</span> XXII Congreso Nacional de Medicina.<br>
+              Noviembre de 2014</li>
+            <li class="capacita"><span>Asistente.</span> XXII Congreso Nacional de Medicina.<br>
+              Noviembre 2014</li>
+            <li class="capacita"><span>Asistente.</span> I Congreso Internacional Iberopanamericano de Medicina Interna.<br>
+              Buenos Aires. Noviembre 2014</li>
+            <li class="capacita"><span>Asistente.</span> Diabetes Summit 2014. Encuentro Latinoamericano de Metabolismo.<br>
+              Mar del Plata. Septiembre 2014</li>
+            <li class="capacita"><span>Asistente.</span> Free Standing Symposium de Dolor, Diabetes y Cardiología.<br>
+              Mendoza. Mayo 2014</li>
+            <li class="capacita"><span>Asistente.</span> II Congreso Internacional de Clínica Médica y Medicina Interna.<br>
+              Buenos Aires. Noviembre 2013</li>
+            <li class="capacita"><span>Asistente.</span> Latin America Scientific Symposium.<br>
+              Miami USA. Agosto 2013</li>
+            <li class="capacita"><span>Asistente.</span> Jornadas Lilly Diabetes 2013.<br>
+              Mendoza. Mayo 2013.</li>
+            <li class="capacita"><span>Asistente.</span> XX Congreso Nacional de Medicina.<br>
+              Buenos Aires. Octubre 2012</li>
+            <li class="capacita"><span>Asistente.</span> Curso Técnicas efectivas de Oratoria para Médicos. Herramientas Gerenciales.<br>
+              Laboratorio Servier. Abril de 2012</li>
+            <li class="capacita"><span>Asistente.</span> Congreso Internacional de Clínica Médica y Medicina Interna.<br>
+              SAM. Buenos Aires. Noviembre de 2011.</li>
+            <li class="capacita"><span>Asistente.</span> Advisory Board Clínica Médica. Práctica en el Tratamiento con AINES.<br>
+              Mayo de 2011.</li>
+            <li class="capacita"><span>Asistente.</span> Curso sobre Diabetes Tipo 2: Fisiopatología Diagnóstico y Tratamiento.<br>
+              Julio 2011.</li>
+            <li class="capacita"><span>Asistente.</span> 29th. World Congress of Internal Medicine. Buenos Aires.<br>
+              Septiembre  de 2008.</li>
+            <li class="capacita"><span>Asistente.</span> Curso “Fisiopatología y Tratamiento de la Diabetes tipo 2”.<br>
+              Santiago de Chile. Septiembre de 2006.</li>
+            <li class="capacita"><span>Asistente.</span> Décimo Congreso Internacional de Medicina Interna del Hospital de Clínicas.<br>
+              Agosto del 2006.</li>
+            <li class="capacita"><span>Asistente.</span> Curso de Actualización para Graduados en Atención Ambulatoria.<br>
+              Asociación Argentina de Medicina Familiar. Abril a Diciembre del 2001. Certificación en la Especialidad en Medicina Familiar.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="btn-item">Ciencias Informáticas</p>
+        <div class="item-content" id="informatica">
+          <h3>Lenguaje Python</h3>
+          <ul >
+            <li>Diplomatura en Python3 - Nivel Avanzado. Universidad Tecnológica Nacional. Febrero 2022.</li>
+            <li>Diplomatura en Python3 - Nivel Intermedio. Universidad Tecnológica Nacional. Diciembre 2021.</li>
+            <li>Diplomatura en Python3 - Nivel Inicial. Universidad Tecnológica Nacional. Octubre 2021.</li>
+            <li>Curso Aprende Programación en Python. Plataforma Udemy. Junio 2022.</li>
+            <li>Curso Maestro de Python 3. Plataforma Udemy. Noviembre 2021.</li>
+          </ul>
+          <h3>Bases de Datos</h3>
+          <ul >
+            <li>Diplomatura en Bases de Datos. Universidad Tecnológica Nacional. Agosto 2021.</li>
+            <li>SQL - Curso Completo de Bases de Datos. Plataforma Udemy. Julio 2021.</li>
+          </ul>
+          <h3>Front-End</h3>
+          <ul >
+            <li>AR Programación con JavaScript - FTM Ed 11. Fundación Telefónica Movistar. Febrero 2023</li>
+            <li>AR Diseño Web con HTML5 + CSS - FTM Ed 11. Fundación Telefónica Movistar. Febrero 2023</li>
+            <li>Curso Introducción al Desarrollo Web I. Universidad de Alicante / Google. Febrero 2022.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="btn-item">Experiencia Laboral</p>
+        <div class="item-content" id="experiencia">
+          <ul >
+            <li><span>Médico de staff</span>. Unidad de Internación de la Cuarta Cátedra de Medicina.<br>
+              Hospital de Clínicas José de San Martín.  Departamento de Medicina. UBA.
+              Desde 1993 a  2005.</li>
+            <li><span>Coordinador y Director Médico.</span> Servicio de Urgencias. Club Gimnasia y Esgrima de Buenos Aires.<br>
+              Desde 1995 a 2005.</li>
+            <li><span>Atención Médica Ambulatoria.</span> Especialidad Clínica Médica. Privados y Afiliados al Grupo Médico OSDE.<br>
+              Desde 1994 hasta la actualidad.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="btn-item">Idiomas</p>
+        <div class="item-content" id="idiomas">
+          <ul >
+            <li>
+              <h3>Inglés.</h3>
+              Escrito y Hablado: Nivel Intermedio. Especializado en Medicina.</li>
+            <li>
+              <h3>Japonés.</h3>
+              Escrito y Hablado: Nivel Básico (N5).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="btn-item">Habilidades</p>
+        <div class="item-content" id="habilidades">
+          <h3>Artista Marcial.</h3>
+          <ul >
+            <li>Kung Fu. Escuela Kai Men. Estilo Choi Li Fut. Año 2005 a 2010. Nivel intermedio. 2º.</li>
+            <li>Karate Do. Escuela Okinawense FAKKO. Estilo ShorynRyu. Practica Actual. Nivel 3º Kyu.</li>
+          </ul>
+          <h3>Estudiante de Piano.</h3>
+          <ul >
+            <li>The Rock Academy. Buenos Aires. Nivel Inicial. Año 2007. </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="btn-item">Intereses</p>
+        <div class="item-content" id="intereses">"Actualmente estoy interesado en participar en proyectos y en equipos de trabajo donde converjan la medicina y la informática. Sin limitación de horizonte. Desde el desarrollo de pequeñas soluciones informáticas para la administración de datos médicos, hasta el uso de inteligencia artificial en la asistencia diagnóstica".</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>Ultima Actualizacion: Febrero 2023</footer>
+<script src="./js/logica.js"></script>
+</body>
+</html>

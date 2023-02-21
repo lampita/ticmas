@@ -1,0 +1,248 @@
+/* Seteo Inicial */
+* {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+* {
+  list-style-type: none;
+}
+button {
+  border: 0;
+}
+label,
+input {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Head y Body */
+h1 {
+  padding: 1em 2em 0.75em 2em;
+  font-size: 2em;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 1.5em;
+  margin: auto;
+}
+h1 span {
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+main {
+  clear: both;
+}
+body {
+  width: 53.375em;
+  margin: auto;
+  height: 90em;
+}
+/* Barra Navegacion */
+ul.nav {
+  width: 100%;
+  margin: 0;
+  background: linear-gradient(-90deg, rgb(128, 189, 255), rgb(70 156 249));
+  float: left;
+}
+ul.nav a {
+  background: rgb(128, 189, 255);
+  color: #fff;
+  display: block;
+  padding: 0.625em 1.563em;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  text-shadow: rgb(110, 110, 110) 1px 1px;
+  text-align: center;
+}
+ul.nav a:hover,
+ul.nav button:hover {
+  background: #370b88;
+}
+ul.nav button {
+  width: 8em;
+  height: 2.5em;
+  background: rgb(128, 189, 255);
+  color: #fff;
+  padding: 0.625em 1.563em;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  text-shadow: rgb(110, 110, 110) 1px 1px;
+  text-align: center;
+}
+.nav > li {
+  display: inline-block;
+}
+.nav li ul {
+  display: none;
+  position: absolute;
+}
+.nav li:hover > ul {
+  display: block;
+}
+/* Acordeon */
+.btn-item {
+  background: white;
+  border-bottom: solid rgb(99, 99, 99) 0.125em;
+  display: block;
+  padding: 1em;
+  caret-color: transparent;
+  font-size: 1.063em;
+  font-weight: 600;
+}
+.btn-item:hover {
+  cursor: pointer;
+}
+.btn-item:after {
+  content: "\002b";
+  float: right;
+}
+.btn-item.active:after {
+  content: "\02212";
+}
+.btn-item.active {
+  background: rgba(168 235 247 / 49%);
+  caret-color: transparent;
+}
+.sub-item-content {
+  overflow: hidden;
+  max-height: 0px;
+  opacity: 0;
+}
+.active + .item-content {
+  max-height: 100%;
+  opacity: 1;
+}
+.item-content {
+  background: white;
+  padding: 1em;
+  overflow: hidden;
+  max-height: 0px;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+.main_container li {
+  padding: 0.4em;
+}
+.main_container span {
+  font-weight: 800;
+}
+h2 {
+  color: rgb(126, 126, 126);
+  font-size: 1.125em;
+  padding-top: 0.3em;
+}
+h3 {
+  color: black;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+#idiomas h3,
+#informatica h3,
+#habilidades h3 {
+  color: black;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  padding-top: 0.3em;
+}
+#intereses {
+  padding-bottom: 3em;
+}
+#idiomas span #experiencia span {
+  letter-spacing: 0.1em;
+}
+/* Formulario de contacto */
+.form-container {
+  width: 20em;
+  height: 35em;
+  padding: 0.5em;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  border: 3px solid #d0cdcd;
+  background-color: #f1f1f1;
+  width: 21em;
+  height: 35em;
+  clear: right;
+  float: left;
+  margin: 0px 70px;
+}
+main {
+  clear: both;
+}
+label {
+  float: left;
+  clear: right;
+}
+#myForm h4 {
+  text-align: center;
+  padding: 0.9em;
+  font-weight: bold;
+}
+#myForm input {
+  padding: 0.9em;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+#myForm textarea {
+  padding: 0.9em;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+#myForm label {
+  padding: 0.6em;
+  font-size: 14px;
+  font-weight: bold;
+}
+#myForm input,
+#myForm textarea {
+  float: right;
+  clear: both;
+}
+#myForm #submit {
+  width: 100px;
+  height: 50px;
+  float: left;
+  background: green;
+  color: white;
+  margin: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+#myForm #cancel {
+  width: 100px;
+  height: 50px;
+  float: right;
+  background: red;
+  color: white;
+  margin: 1em 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0.9em;
+  background: linear-gradient(
+    90deg,
+    rgba(139, 191, 246, 0.892),
+    rgb(70 156 249)
+  );
+  float: left;
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  text-shadow: rgb(110, 110, 110) 1px 1px;
+  text-align: right;
+  font-weight: bold;
+}
